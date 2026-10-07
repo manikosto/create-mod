@@ -40,6 +40,10 @@ Bars and charts: `█ ▓ ▒ ░`, `▁▂▃▄▅▆▇█`, braille `⣀⣤�
 - Cards: `borderStyle="round"` + `borderColor` faint + `paddingX={1}` for a unit (a section, an answer).
   Don't nest cards; a card title is a bold line inside it with meta on the right.
 - Air: `marginTop={1}` between units, never blank `Text` rows; `columnGap={1}`/`{2}` in rows.
+- A glyph beside wrapped text (a bullet, a quote bar) sits in a row Box with `alignItems="flex-start"`, the
+  glyph in a `flexShrink={0}` Box and the text in a `flexGrow={1}` Box: otherwise the desktop centers it.
+- Space between blocks follows the author: a blank line in the source is one row, none hugs; a heading
+  gets a second row above. Never a uniform `rowGap` for prose.
 - Truncate, don't wrap, anything in a fixed row (`wrap="truncate"`); wrap only prose.
 - Align numbers right, labels left; pad with `padStart`/`padEnd` for columns.
 - Width: draw to `e.props.bodyColumns`; test the mockup at 40 and 80 columns.
