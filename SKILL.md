@@ -5,7 +5,7 @@ description: Build a Claude Code mod (a plugin of function hooks) with a beautif
 
 # create-mod
 
-Everything learned building [deck](https://github.com/manikosto/deck), [preview](https://github.com/manikosto/preview),
+Everything learned building [deck](https://github.com/manikosto/deck),
 [glint](https://github.com/manikosto/glint), [files](https://github.com/manikosto/files),
 [dock](https://github.com/manikosto/dock) and [aside](https://github.com/manikosto/aside), as one workflow.
 
@@ -111,7 +111,9 @@ Say what was checked, show the mockup of what they should see, and ask for a scr
 claude plugin marketplace update claude-mods && claude plugin install <name>@claude-mods
 ```
 
-The plugin is read from its folder, so after each edit the user runs `/reload-plugins` (installed
+In the terminal the plugin is read from its folder, so after each edit the user runs `/reload-plugins`.
+The desktop app runs a snapshot copied into the plugin cache: bump `version` in `plugin.json`, run
+`claude plugin marketplace update claude-mods && claude plugin update <name>@claude-mods`, and restart it (installed
 plugins log hook failures to the debug log only — no transcript line — so make failures visible in the
 UI: a red status line or a toast).
 

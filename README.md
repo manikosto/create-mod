@@ -18,7 +18,7 @@ Say *"make a mod that…"* and the skill walks Claude through it:
 It carries a **design system for terminal UIs** (`references/terminal-ux.md`) and every trap hit while
 building [deck](https://github.com/manikosto/deck), [files](https://github.com/manikosto/files),
 [dock](https://github.com/manikosto/dock), [aside](https://github.com/manikosto/aside),
-[glint](https://github.com/manikosto/glint) and [preview](https://github.com/manikosto/preview)
+[glint](https://github.com/manikosto/glint)
 (`references/gotchas.md`).
 
 ## Install

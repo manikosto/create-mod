@@ -98,7 +98,9 @@ Each one broke a real mod. Symptom → cause → fix.
 
 ## Shipping
 
-- Installed-from-folder plugins: edits apply on `/reload-plugins`, no reinstall.
+- Installed-from-folder plugins: in the terminal edits apply on `/reload-plugins`. The desktop app runs a
+  snapshot in the plugin cache: bump the version, `claude plugin update <name>@<marketplace>`, restart.
+- The desktop draws Buttons in its own style (white chips, even `plain`): keep them few and secondary there.
 - Two mods drawing the same site fight; when forking a renderer (glint from prismantis) disable the
   original.
 - In zsh, `git $VAR commit` does not split `$VAR`; set author via `GIT_AUTHOR_*`/`GIT_COMMITTER_*`
